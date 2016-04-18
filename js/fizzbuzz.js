@@ -17,6 +17,7 @@ $(document).ready(function() {
 
 
 //  -- New Assignment --//
+ // 0- Commit Frequently
 
 // 1- When page loads, user should be prompted to supply a number.
 //    Do this with a prompt() function, but also maybe a simple text input with text telling user to input a nubmer.
