@@ -1,3 +1,14 @@
+var userNumber = prompt("Hi there!  Pick a Number");
+var notString;
+
+	if (userNumber != null) {
+		var notString = parseInt(userNumber)
+	};
+
+	
+
+
+
 $(document).ready(function() {
 	for (var number = 1; number < 100; number++) {
 		if (number%5 == 0 && number%3 == 0) {
