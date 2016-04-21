@@ -2,11 +2,13 @@ $(function (){
 
 	var userSuggested = 0;
 	userSuggested += prompt("Hi there!  Pick a Number");
+	// userSuggested is a String at this point
 
-	var userNumber = stringToNumber(userSuggested);
+	var userNumber = stringToNumber(userSuggested);  //call stringToNumber passing userSuggested and assign its rteturn value to userNumber
+
 
 	if(userNumber) {
-		fizzbuzz(userNumber); // Allows line #25 to run 
+		fizzbuzz(userNumber); // Call Fizzbuzz function passing along userNumber. 
 	} else {
 		alert("You did not enter a number");
 	}
@@ -15,9 +17,9 @@ $(function (){
 
 function stringToNumber(val) {
 	if (Number(parseInt(val))==val) {
-		return parseInt(val);
+		return parseInt(val); // Return the number value of val
 	} else {
-		return false;
+		return false; // Not a number
 	}
 };
 
