@@ -1,10 +1,26 @@
-$(document).load(function (){
+$(function (){
 
+	var userSuggested = 0;
+	userSuggested += prompt("Hi there!  Pick a Number");
 
-	var userSuggested = prompt("Hi there!  Pick a Number");
+	var userNumber = stringToNumber(userSuggested);
 
-	// convert userSuggested into  integer from string (+22)
-	// function takes integer and returns fizzbuzz until that value
+	if(userNumber) {
+		fizzbuzz(userNumber);
+	} else {
+		alert("You did not enter a number");
+	}
+
+});
+
+function stringToNumber(val) {
+	if (Number(parseInt(val))==val) {
+		return parseInt(val);
+	} else {
+		return false;
+	}
+};
+
 
 	function stringToNumber () {
 		var finalNumber = parseInt(userSuggested);
